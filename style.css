@@ -1,0 +1,136 @@
+/*
+Theme Name: Creativium
+Theme URI: https://effethemes.com/themes/creativium-wordpress-theme/
+Author: Effe Themes
+Author URI: https://effethemes.com/
+Description: Introducing Creativium, a versatile multipurpose WordPress theme ideal for agencies, designers, portfolios, and studios. With its modern, professional design featuring a clean gradient background, Creativium enhances your online presence with elegance. Perfect for showcasing creative projects and services, this theme combines functionality with a sleek design aesthetic. Creativium is designed for seamless user experience across all devices, offering customizable layouts, dynamic block patterns, and seamless integration with popular plugins to help you create a standout website tailored to your creative vision.
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 5.7
+Version: 1.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: creativium
+Tags: block-patterns, custom-logo, blog, full-site-editing, full-width-template, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, grid-layout, theme-options, photography, portfolio, style-variations, template-editing, translation-ready, threaded-comments, one-column, wide-blocks
+*/
+
+/* ================= > General Styles < ================= */
+
+body {
+  /* background: var(--wp--preset--gradient--custom-main-gradiant); */
+}
+
+.wp-block-site-title > a {
+  text-decoration: none;
+}
+
+:where(.wp-site-blocks) > * {
+  margin-block-start: 0;
+}
+
+/* ================= > Header < ================= */
+
+.wp-block-navigation__responsive-container-content {
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.wp-block-navigation__submenu-container {
+  border-radius: 20px !important;
+}
+
+.wp-block-navigation__submenu-container > li {
+  border-radius: 20px !important
+}
+
+/* ================= > Blog < ================= */
+
+input, 
+textarea {
+  background: transparent !important;
+  border: 2px solid #fff !important; 
+  color: #fff;
+}
+
+input::-webkit-input-placeholder {
+  color: #ffffffa1;
+}
+
+input::-moz-placeholder {
+  color: #ffffffa1;
+}
+
+.form-submit > input {
+  transition: all 0.5s ease;
+  color: #fff;
+}
+
+.form-submit > input:hover {
+  background: #fff !important;
+  color: #333;
+}
+
+.wp-block-post-title > a:hover {
+  text-decoration: none;
+}
+
+.wp-block-read-more:hover {
+  text-decoration: overline !important;
+}
+
+.wp-block-search__button {
+  transition: all 0.5s ease;
+  background: #fff;
+  color: #333;
+}
+
+.wp-block-search__button:hover {
+  background: transparent;
+  color: #fff;
+}
+
+/* ================= > Media Queries < ================= */
+
+@media (max-width: 1024px) {
+  .wp-block-columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center !important;
+  }
+
+  .wp-block-column > div {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) .wp-block-navigation__responsive-container-close,
+  .wp-block-navigation__responsive-container-open:not(.always-shown),
+  .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+    display: none;
+  }
+
+  .wp-block-navigation__responsive-container-open:not(.always-shown) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .wp-block-navigation__container {
+    --navigation-layout-justification-setting: flex-start !important;
+    --navigation-layout-justify: flex-start !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .wp-block-buttons {
+    flex-direction: column;
+  }
+
+  .footer-row, .footer-title-row {
+    flex-direction: column;
+  }
+}

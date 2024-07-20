@@ -1,0 +1,21 @@
+/* ================= > Button Hover < ================= */
+
+.is-style-button-hover-fill > a {
+  transition: all 0.5s ease;
+}
+
+.is-style-button-hover-fill > a:hover {
+  border-color: #fff !important;
+  background: transparent !important;
+  color: #fff !important;
+}
+
+.is-style-button-hover-outline > a {
+  background: transparent !important;
+  transition: all 0.5s ease;
+}
+
+.is-style-button-hover-outline > a:hover {
+  background: #fff !important;
+  color: #333 !important;
+}

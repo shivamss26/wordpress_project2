@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Ethereal Aura",
+	"settings": {
+		"color": {
+			"gradients": [
+				{
+					"gradient": "linear-gradient(234deg, #15a09b 0%, #1f57f5 40%)",
+					"name": "Main gradiant",
+					"slug": "custom-main-gradiant"
+				}
+			],
+			"palette": [
+				{
+					"color": "#040D1CC7",
+					"name": "Dark Background Color",
+					"slug": "custom-dark-background-color"
+				},
+				{
+					"color": "#08142C",
+					"name": "Primary",
+					"slug": "custom-primary"
+				}
+			]
+		}
+	}
+}
